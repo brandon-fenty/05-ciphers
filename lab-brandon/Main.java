@@ -12,20 +12,19 @@ public class Main {
         while (isRunning) {
             Scanner input = new Scanner(System.in);
             int selection = input.nextInt();
-//            String payload = input.next();
 
             if (selection == 1) {
                 System.out.println("You chose encode.");
                 Cipher.presentOptions();
                 int cipherSelection = input.nextInt();
 
-                Cipher.encode(cipherSelection, "");
+                Cipher.encode(cipherSelection);
             } else if (selection == 2) {
                 System.out.println("You chose decode.");
                 Cipher.presentOptions();
                 int cipherSelection = input.nextInt();
 
-                Cipher.decode(cipherSelection, "");
+                Cipher.decode(cipherSelection);
             } else {
                 System.out.println("I didn't understand your selection.");
             }
