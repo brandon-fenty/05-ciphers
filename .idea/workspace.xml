@@ -4,7 +4,7 @@
     <list default="true" id="70a50a43-7a51-4a05-a916-1deccd352316" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/lab-brandon/ciphers/CaesarShiftCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-brandon/ciphers/CaesarShiftCipher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-brandon/ciphers/Cipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-brandon/ciphers/Cipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-brandon/ciphers/ROT13Cipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-brandon/ciphers/ROT13Cipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-brandon/ciphers/KeywordCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-brandon/ciphers/KeywordCipher.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,17 +15,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/05_ciphers$Main.ic" NAME="Main Coverage Results" MODIFIED="1531766880528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/05_ciphers$Main.ic" NAME="Main Coverage Results" MODIFIED="1531774150720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.44598672">
+    <splitter split-orientation="horizontal" split-proportion="0.48340374">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lab-brandon/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="266">
-                  <caret line="14" selection-start-line="14" selection-end-line="14" />
+                <state relative-caret-position="722">
+                  <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -33,20 +33,23 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="KeywordCipher.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="KeywordCipher.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lab-brandon/ciphers/KeywordCipher.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+                <state relative-caret-position="750">
+                  <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="CaesarShiftCipher.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="CaesarShiftCipher.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lab-brandon/ciphers/CaesarShiftCipher.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="556">
-                  <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+                <state relative-caret-position="783">
+                  <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+                  <folding>
+                    <marker date="1531771825000" expanded="true" signature="257:508" ph="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -58,8 +61,8 @@
           <file leaf-file-name="ROT13Cipher.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lab-brandon/ciphers/ROT13Cipher.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="48">
-                  <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+                <state relative-caret-position="432">
+                  <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
                 </state>
               </provider>
             </entry>
@@ -67,8 +70,8 @@
           <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lab-brandon/ciphers/Cipher.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="466">
-                  <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+                <state relative-caret-position="454">
+                  <caret line="79" selection-start-line="79" selection-end-line="80" />
                 </state>
               </provider>
             </entry>
@@ -92,10 +95,10 @@
       <list>
         <option value="$PROJECT_DIR$/lab-brandon/main.java" />
         <option value="$PROJECT_DIR$/lab-brandon/Main.java" />
-        <option value="$PROJECT_DIR$/lab-brandon/ciphers/KeywordCipher.java" />
         <option value="$PROJECT_DIR$/lab-brandon/ciphers/ROT13Cipher.java" />
-        <option value="$PROJECT_DIR$/lab-brandon/ciphers/Cipher.java" />
         <option value="$PROJECT_DIR$/lab-brandon/ciphers/CaesarShiftCipher.java" />
+        <option value="$PROJECT_DIR$/lab-brandon/ciphers/Cipher.java" />
+        <option value="$PROJECT_DIR$/lab-brandon/ciphers/KeywordCipher.java" />
       </list>
     </option>
   </component>
@@ -234,8 +237,9 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3084577" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3124378" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32960597" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32935324" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -291,6 +295,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-start-column="2" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <marker date="1531771825000" expanded="true" signature="257:508" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -329,6 +336,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <marker date="1531771825000" expanded="true" signature="257:508" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -341,39 +351,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab-brandon/ciphers/ROT13Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        <state relative-caret-position="432">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab-brandon/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="722">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab-brandon/ciphers/KeywordCipher.java">
+    <entry file="file://$PROJECT_DIR$/lab-brandon/ciphers/CaesarShiftCipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        <state relative-caret-position="783">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding>
+            <marker date="1531771825000" expanded="true" signature="257:508" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab-brandon/ciphers/Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+        <state relative-caret-position="454">
+          <caret line="79" selection-start-line="79" selection-end-line="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab-brandon/ciphers/CaesarShiftCipher.java">
+    <entry file="file://$PROJECT_DIR$/lab-brandon/ciphers/KeywordCipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        <state relative-caret-position="750">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>

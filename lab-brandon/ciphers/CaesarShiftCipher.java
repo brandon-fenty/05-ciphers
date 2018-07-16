@@ -1,8 +1,11 @@
 package ciphers;
 
+import java.util.Arrays;
+
 public class CaesarShiftCipher extends Cipher {
 
     public static String encrypt (String payload, int shift) {
+        System.out.println(payload);
         char[] arr = payload.toCharArray();
         int ascii;
 
@@ -10,8 +13,8 @@ public class CaesarShiftCipher extends Cipher {
             ascii = (int) arr[i];
             ascii = ascii + shift;
 
-            if (ascii > 122) {
-                ascii = 32 + (122 % ascii);
+            if (ascii > 126) {
+                ascii = 32 + (126 % ascii);
             }
 
             arr[i] = (char) ascii;
@@ -27,8 +30,8 @@ public class CaesarShiftCipher extends Cipher {
             ascii = (int) arr[i];
             ascii = ascii - shift;
 
-            if (ascii > 122) {
-                ascii = 32 + (122 % ascii);
+            if (ascii > 126) {
+                ascii = 32 + (126 % ascii);
             }
 
             arr[i] = (char) ascii;
