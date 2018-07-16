@@ -2,8 +2,10 @@ package ciphers;
 
 import java.util.Scanner;
 
+import static ciphers.ROT13Cipher.ROT_ALPHABET;
+
 public class Cipher {
-    public static final String ALPHABET = "abcdefghijklmnop";
+    public static final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 
     public static void presentOptions () {
         System.out.println("Select your cipher type -");
@@ -15,58 +17,71 @@ public class Cipher {
 
     public static String encode (int type) {
         String encodedString = "";
+        String payload = " ";
         Scanner input = new Scanner(System.in);
-        System.out.println("Inside encode");
+        System.out.println("Encoder");
 
         if (type == 1) {
             System.out.println("You chose plaintext - Type your message below");
-            String payload = input.nextLine();
+            payload = input.nextLine();
             encodedString = payload;
 
         } else if (type == 2) {
             System.out.println("You chose ROT13 - Type your message below");
-            String payload = input.nextLine();
-//            encodedString = replaceCharacters(payload, ALPHABET, ROT13);
+            payload = input.nextLine();
+            encodedString = ROT13Cipher.encodeRot(payload);
 
         } else if (type == 3) {
             System.out.println("You chose Keyword - Type your message below");
-            String payload = input.nextLine();
+            payload = input.nextLine();
 
         } else if (type == 4) {
             System.out.println("You chose Caesar-Shift - Type your message below");
-            String payload = input.nextLine();
+            payload = input.nextLine();
 
         }
-        System.out.println(encodedString);
+        System.out.println("Your message: " + encodedString);
         return encodedString;
     }
 
     public static String decode(int type) {
         String decodedString = "";
+        String payload = " ";
         Scanner input = new Scanner(System.in);
-        String payload = input.next();
 
         if (type == 1) {
             System.out.println("You chose plaintext - Type your message below");
-
+            payload = input.next();
         } else if (type == 2) {
             System.out.println("You chose ROT13 - Type your message below");
-
+            payload = input.next();
         } else if (type == 3) {
             System.out.println("You chose Keyword - Type your message below");
-
+            payload = input.next();
         } else if (type == 4) {
             System.out.println("You chose Caesar-Shift - Type your message below");
-
+            payload = input.next();
         }
 
         return decodedString;
     }
 
     protected static String replaceCharacters(String payload, String source, String target) {
-        String thing = " ";
 
-        return thing;
+        String thingy = " ";
+
+        // Build the for loop here to compare the input message to the different alphabets based on chosen cipher
+        // If a => n etc...
+
+        for (int i = 0; i < payload.length(); i++) {
+            System.out.println("In the for loop");
+            System.out.println(payload.charAt(i));
+            System.out.println(target.charAt(i));
+            thingy += target.charAt(i);
+
+        }
+
+        return thingy;
     }
 
 }

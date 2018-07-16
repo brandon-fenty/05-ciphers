@@ -8,6 +8,7 @@ public class Main {
         System.out.println("Select your Operation:");
         System.out.println("1: encode");
         System.out.println("2: decode");
+        System.out.println("3: quit");
 
         while (isRunning) {
             Scanner input = new Scanner(System.in);
@@ -25,6 +26,8 @@ public class Main {
                 int cipherSelection = input.nextInt();
 
                 Cipher.decode(cipherSelection);
+            } else if (selection == 3) {
+                isRunning = false;
             } else {
                 System.out.println("I didn't understand your selection.");
             }
