@@ -2,8 +2,6 @@ package ciphers;
 
 import java.util.Scanner;
 
-import static ciphers.ROT13Cipher.ROT_ALPHABET;
-
 public class Cipher {
     public static final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 
@@ -17,7 +15,7 @@ public class Cipher {
 
     public static String encode (int type) {
         String encodedString = "";
-        String payload = " ";
+        String payload = "";
         Scanner input = new Scanner(System.in);
         System.out.println("Encoder");
 
@@ -35,10 +33,15 @@ public class Cipher {
             System.out.println("You chose Keyword - Type your message below");
             payload = input.nextLine();
 
-        } else if (type == 4) {
-            System.out.println("You chose Caesar-Shift - Type your message below");
-            payload = input.nextLine();
 
+        } else if (type == 4) {
+            System.out.println("You chose Caesar-Shift - How much would you like to shift?");
+            int shiftyBoi = input.nextInt();
+            System.out.println("You set the shift amount to: " + shiftyBoi);
+            System.out.println("Input your message below");
+            payload = input.next();
+
+            encodedString = CaesarShiftCipher.encrypt(payload, shiftyBoi);
         }
         System.out.println("Your message: " + encodedString);
         return encodedString;
@@ -46,23 +49,31 @@ public class Cipher {
 
     public static String decode(int type) {
         String decodedString = "";
-        String payload = " ";
+        String payload = "";
         Scanner input = new Scanner(System.in);
+        System.out.println("Decoder");
 
         if (type == 1) {
             System.out.println("You chose plaintext - Type your message below");
-            payload = input.next();
+            payload = input.nextLine();
         } else if (type == 2) {
             System.out.println("You chose ROT13 - Type your message below");
-            payload = input.next();
+            payload = input.nextLine();
+            decodedString = ROT13Cipher.encodeRot(payload);
+
         } else if (type == 3) {
             System.out.println("You chose Keyword - Type your message below");
-            payload = input.next();
+            payload = input.nextLine();
         } else if (type == 4) {
-            System.out.println("You chose Caesar-Shift - Type your message below");
+            System.out.println("You chose Caesar-Shift - How far is your cipher shifted?");
+            int shiftyBoi = input.nextInt();
+            System.out.println("You set the shift amount to: " + shiftyBoi);
+            System.out.println("Input your message below");
             payload = input.next();
-        }
 
+            decodedString = CaesarShiftCipher.decrypt(payload, shiftyBoi);
+        }
+        System.out.println("Your message: " + decodedString);
         return decodedString;
     }
 

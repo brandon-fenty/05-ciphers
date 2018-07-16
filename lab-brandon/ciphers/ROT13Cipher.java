@@ -1,7 +1,6 @@
 package ciphers;
 
 public class ROT13Cipher extends Cipher {
-    public static final String ROT_ALPHABET = "nopqrstuvwxyzabcdefghijklm";
 
     public static String encodeRot (String payload) {
         char c;
